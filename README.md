@@ -1,3 +1,38 @@
+This package is forked SleepingOwl Admin.
+
+For using with [creator4ever/laravel-adminlte](https://github.com/creator4ever/laravel-adminlte) that forked gionnivaleriana/laravel-adminlte.
+
+```json
+"repositories": [{
+	"type": "vcs",
+	"url": "https://github.com/creator4ever/laravel-adminlte.git"
+},
+{
+	"type": "vcs",
+	"url": "https://github.com/creator4ever/admin.git"
+}],
+"require": {
+	...
+	"gionnivaleriana/laravel-adminlte": "dev-master",
+	"rydurham/sentinel": "dev-master",
+},
+...
+```
+
+```php
+<?php
+// app/config.php
+return [
+    
+    // ...
+    
+    'aliases' => [
+        // ...
+        'AssetManager'     => GionniValeriana\laravelAdminlte\AssetManager::class,
+    ],
+```
+
+
 ## Laravel 5 Admin Module
 
 [![Latest Stable Version](https://poser.pugx.org/sleeping-owl/admin/v/stable.svg)](https://packagist.org/packages/sleeping-owl/admin)
