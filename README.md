@@ -4,10 +4,11 @@ For using with [creator4ever/laravel-adminlte](https://github.com/creator4ever/l
 
 ```json
 "repositories": [{
-	... package setting
+	... private package setting
 }],
 "require": {
 	...
+	"sleeping-owl/admin": "dev-master",
 	"gionnivaleriana/laravel-adminlte": "dev-master"
 },
 ...
