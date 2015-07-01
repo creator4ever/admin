@@ -4,17 +4,11 @@ For using with [creator4ever/laravel-adminlte](https://github.com/creator4ever/l
 
 ```json
 "repositories": [{
-	"type": "vcs",
-	"url": "https://github.com/creator4ever/laravel-adminlte.git"
-},
-{
-	"type": "vcs",
-	"url": "https://github.com/creator4ever/admin.git"
+	... package setting
 }],
 "require": {
 	...
-	"gionnivaleriana/laravel-adminlte": "dev-master",
-	"rydurham/sentinel": "dev-master",
+	"gionnivaleriana/laravel-adminlte": "dev-master"
 },
 ...
 ```
