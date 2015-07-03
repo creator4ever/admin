@@ -138,7 +138,7 @@ class FormBuilder extends IlluminateFormBuilder
 		$value = $this->getValueAttribute($name, $value);
 		if ( ! is_null($value))
 		{
-			$value = DateFormatter::format($value, $dateFormat, $timeFormat);
+			// $value = DateFormatter::format($value, $dateFormat, $timeFormat);
 		}
 
 		$options = $this->addClassToOptions('form-control', $options);

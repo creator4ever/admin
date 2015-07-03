@@ -18322,7 +18322,8 @@ function(t) {
                 d = !1,
                 u = function() {
                     var r, d, u = !1;
-                    if (l.options = t.extend({}, s, a), l.options.icons = t.extend({}, o, l.options.icons), l.element = t(i), h(), !l.options.pickTime && !l.options.pickDate) throw new Error("Must choose at least one picker");
+                    l.options = t.extend({}, s, a);
+                    if (l.options, l.options.icons = t.extend({}, o, l.options.icons), l.element = t(i), h(), !l.options.pickTime && !l.options.pickDate) throw new Error("Must choose at least one picker");
                     if (l.id = n++, e.locale(l.options.language), l.date = e(), l.unset = !1, l.isInput = l.element.is("input"), l.component = !1, l.element.hasClass("input-group") && (l.component = l.element.find(0 === l.element.find(".datepickerbutton").size() ? '[class^="input-group-"]' : ".datepickerbutton")), l.format = l.options.format, r = e().localeData(), l.format || (l.format = l.options.pickDate ? r.longDateFormat("L") : "", l.options.pickDate && l.options.pickTime && (l.format += " "), l.format += l.options.pickTime ? r.longDateFormat("LT") : "", l.options.useSeconds && (-1 !== r.longDateFormat("LT").indexOf(" A") ? l.format = l.format.split(" A")[0] + ":ss A" : l.format += ":ss")), l.use24hours = l.format.toLowerCase().indexOf("a") < 0 && l.format.indexOf("h") < 0, l.component && (u = l.component.find("span")), l.options.pickTime && u && u.addClass(l.options.icons.time), l.options.pickDate && u && (u.removeClass(l.options.icons.time), u.addClass(l.options.icons.date)), l.options.widgetParent = "string" == typeof l.options.widgetParent && l.options.widgetParent || l.element.parents().filter(function() {
                         return "scroll" === t(this).css("overflow-y")
                     }).get(0) || "body", l.widget = t(B()).appendTo(l.options.widgetParent), l.minViewMode = l.options.minViewMode || 0, "string" == typeof l.minViewMode) switch (l.minViewMode) {
@@ -18719,11 +18720,11 @@ function(t) {
             a || n.data("DateTimePicker", new i(this, e))
         })
     }, t.fn.datetimepicker.defaults = {
-        format: !1,
+        format: 'YYYY-MM-DD H:i:s',
         pickDate: !0,
         pickTime: !0,
         useMinutes: !0,
-        useSeconds: !1,
+        useSeconds: !0,
         useCurrent: !0,
         calendarWeeks: !1,
         minuteStepping: 1,
