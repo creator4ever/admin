@@ -4,8 +4,8 @@ return [
 	'404'      => '페이지를 찾을 수 없습니다.',
 	'auth'     => [
 		'title'          => 'Authorization',
-		'username'       => 'Username',
-		'password'       => 'Password',
+		'username'       => '아이디',
+		'password'       => '비밀번호',
 		'login'          => '로그인',
 		'logout'         => '로그아웃',
 		'wrong-username' => '아이디가 틀립니다.',
@@ -60,7 +60,7 @@ return [
 		]
 	],
 	'select'   => [
-		'nothing'  => 'Nothing selected',
-		'selected' => 'selected'
+		'nothing'  => '선택해주세요',
+		'selected' => '선택되었습니다'
 	]
 ];
