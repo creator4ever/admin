@@ -7,7 +7,7 @@
 
 	<title>{{{ $pageTitle }}}</title>
 
-	@foreach (\SleepingOwl\Admin\AssetManager\AssetManager::styles() as $style)
+	@foreach (AssetManager::styles() as $style)
 		<link media="all" type="text/css" rel="stylesheet" href="{{ $style }}" >
 	@endforeach
 
@@ -17,7 +17,7 @@
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-	@foreach (\SleepingOwl\Admin\AssetManager\AssetManager::scripts() as $script)
+	@foreach (AssetManager::scripts() as $script)
 		<script src="{{ $script }}"></script>
 	@endforeach
 </head>
